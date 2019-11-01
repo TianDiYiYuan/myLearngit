@@ -1,0 +1,67 @@
+add 
+rm
+mv 
+commit
+push
+checkout
+reset
+pull clone
+
+1、用户身份确认
+    git config --global user.name "XXX"
+    git config --global user.email "XXX@xxx"
+2、查看全局变量
+    git config --global -l
+3、创建新仓库
+    mkdir git-test #创建新的文件夹
+    cd git-test    #进入创建的文件夹
+    git init       #创建仓库
+4、查看整个仓库状态
+    git status
+5、添加文件
+    git add XXX#文件名
+6、发起commit
+    git commit -m "remark about alter file"#对修改文件的备注
+7、查看所有的提交历史
+    git log
+8、查看某次提交修改了什么
+    git show <commit-id>
+9、查看尚未暂存的文件修改了那些内容
+    git diff xxx#文件名
+10、回退历史版本
+    git reset --hard HEAD~100
+    git reset --hard commit-id #可返回到此版本未来的版本
+11、列出当前分支
+    git branch 
+12、创建分支
+    git branch <branch-nane>
+13、切换分支
+    git checkout <branch-nane>
+14、删除某分支
+    git branch -d <branch-nane>
+15、合并分支到master分支上
+    git merge <branch-nane>
+16、合并指定分支到当前分支
+    git merge dev 
+
+17、本仓库与远程仓库建立链接
+    git remote add <remote-name><URL>
+18、修改代号名
+    git remote rename <old-name><new-name>
+19、删除某条对应名
+    git remote remove <remote-name>
+20、查看代号所对应的URL 
+    git remote get-url <remote-name>
+21、修改代号所对应的URL
+    git remote set-url <remote-name> <new-URL>
+22、第一次提交到远程仓库
+    git push -u <remote-name> <branch-nane>
+23、克隆项目到本地
+    git clone https://github.com/Tencent/wepy.git
+git完整命令手册 https://git-scm.com/docs
+
+
+ 
+
+
+
